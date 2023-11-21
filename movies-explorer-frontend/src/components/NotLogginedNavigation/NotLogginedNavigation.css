@@ -1,0 +1,45 @@
+.notLogginedNavigation {
+  align-self: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.notLogginedNavigation__registerLink {
+  margin: 0 30px 0 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.notLogginedNavigation__registerLink:hover {
+  opacity: .5;
+}
+
+.notLogginedNavigation__loginLink {
+  padding: 8px 20px;
+  border-radius: 3px;
+  color: #000;
+  text-decoration: none;
+  background-color: #3DDC84;
+  display: block;
+}
+
+.notLogginedNavigation__loginLink:hover {
+  opacity: .5;
+}
+
+@media screen and (max-width: 450px){
+  .notLogginedNavigation {
+    font-size: 10px;
+  }
+
+  .notLogginedNavigation__registerLink {
+    margin: 0 14px 0 0;
+  }
+
+  .notLogginedNavigation__loginLink {
+    padding: 5px 12px;
+  }
+}

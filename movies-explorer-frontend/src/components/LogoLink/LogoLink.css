@@ -1,0 +1,7 @@
+.logoLink {
+  display: block;
+}
+
+.logoLink:hover {
+  opacity: .5;
+}

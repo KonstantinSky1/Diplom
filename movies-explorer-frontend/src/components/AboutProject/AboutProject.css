@@ -1,0 +1,175 @@
+.aboutProject {
+  padding: 110px 70px 110px 70px;
+}
+
+.aboutProject__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.aboutProject__title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 23px;
+}
+
+.aboutProject__columns {
+  display: flex;
+  padding: 70px 0 110px 0;
+}
+
+.aboutProject__column {
+  max-width: 550px;
+  margin-right: 40px;
+}
+
+.aboutProject__column:last-child {
+  margin: 0;
+}
+
+.aboutProject__columnTitle {
+  margin: 0 0 26px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  }
+
+.aboutProject__columnText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.aboutProject__weeks {
+  font-size: 14px;
+  line-height: 17px;
+  display: grid;
+  grid-template-columns: .25fr 1fr;
+  grid-template-areas:
+    "oneWeek fourWeeks"
+    "back front";
+}
+
+.aboutProject__weeksOne {
+  grid-area: oneWeek;
+  padding: 9px 0;
+  text-align: center;
+  color: #000;
+  background-color: #3DDC84;
+}
+
+.aboutProject__weeksFour {
+  grid-area: fourWeeks;
+  padding: 9px 0;
+  text-align: center;
+  background-color: #303030;
+}
+
+.aboutProject__weeksBack {
+  grid-area: back;
+  text-align: center;
+  padding-top: 14px;
+  font-weight: 500;
+  color: #8B8B8B;
+}
+
+.aboutProject__weeksFront {
+  grid-area: front;
+  text-align: center;
+  padding-top: 14px;
+  font-weight: 500;
+  color: #8B8B8B;
+}
+
+@media screen and (max-width: 769px){
+  .aboutProject {
+    padding: 90px 50px 90px 50px;
+  }
+
+  .aboutProject__weeksBack {
+    font-weight: 400;
+  }
+
+  .aboutProject__weeksFront {
+    font-weight: 400;
+  }
+
+  .aboutProject__columnTitle {
+    margin: 0 0 22px 0;
+  }
+
+  .aboutProject__columnText {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .aboutProject__columns {
+    padding-bottom: 93px;
+  }
+
+  .aboutProject__weeks {
+    grid-template-columns: .265fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .aboutProject__columns {
+    flex-direction: column;
+    padding: 60px 0 60px 0;
+  }
+
+  .aboutProject {
+    padding: 70px 18px 70px 18px;
+  }
+
+  .aboutProject__title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 28px;
+  }
+
+  .aboutProject__columnTitle {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 16px 0;
+    }
+
+  .aboutProject__columnText {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .aboutProject__column {
+    margin: 0 0 56px 0;
+  }
+
+  .aboutProject__weeks {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .aboutProject__weeksOne {
+    padding: 11px 0;
+  }
+  
+  .aboutProject__weeksFour {
+    padding: 11px 0;
+  }
+
+  .aboutProject__weeksBack {
+    padding-top: 10px;
+  }
+  
+  .aboutProject__weeksFront {
+    padding-top: 10px;
+  }
+
+  .aboutProject__weeks {
+    grid-template-columns: .54fr 1fr;
+  }
+}
